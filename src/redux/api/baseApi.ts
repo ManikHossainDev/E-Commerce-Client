@@ -6,7 +6,7 @@ import { RootState } from "../store";
 export const baseApi = createApi({
   reducerPath: "baseApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://l2-a9-backend.vercel.app/api/v1",
+    baseUrl: "https://ecommerce-server-ashen.vercel.app/api/v1",
     // baseUrl: "http://localhost:5000/api/v1",
     // credentials: "include",
     prepareHeaders: (headers, { getState }) => {
@@ -14,7 +14,6 @@ export const baseApi = createApi({
       if (token) {
         headers.set("authorization", `${token}`);
       }
-
       return headers;
     },
   }),
