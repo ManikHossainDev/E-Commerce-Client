@@ -42,7 +42,7 @@ const Dashboard = () => {
             <img
               src={
                 currentUserData?.profilePhoto ||
-                "https://i.ibb.co/z89cgQr/profile.webp"
+                "https://i.ibb.co.com/JkhYcqX/icon-5359553-1280.webp"
               }
               alt="Profile"
               className="w-full h-full object-cover"

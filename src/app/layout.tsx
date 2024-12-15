@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 import React from "react";
 
 import "@/src/styles/globals.css";
@@ -10,12 +11,12 @@ import { Providers } from "../lib/Providers";
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
+    default: "ECommerce",
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
   icons: {
-    icon: "/favicon.ico",
+    icon: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/e-commerce-logo%2Conline-store-logo%2Ccart-logo-design-template-9b5e4319f7f69b92d7421a048ce90dcb_screen.jpg?ts=1662916038",
   },
 };
 

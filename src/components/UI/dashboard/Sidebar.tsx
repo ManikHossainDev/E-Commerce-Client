@@ -1,3 +1,6 @@
+/* eslint-disable import/order */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable padding-line-between-statements */
 "use client";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -8,6 +11,7 @@ import {
   MdSpaceDashboard,
   MdSubscriptions,
 } from "react-icons/md";
+// eslint-disable-next-line import/order
 import { IoFastFood } from "react-icons/io5";
 import { useAppSelector } from "@/src/redux/hooks";
 import { selectCurrentUser } from "@/src/redux/features/auth/authSlice";
@@ -33,19 +37,19 @@ const Sidebar = () => {
   const currenttUserRole = (user as any)?.user?.role;
 
   return (
-    <div className="min-h-screen fixed h-full flex bg-gray-900">
+    <div className="min-h-screen fixed h-full flex bg-gray-500">
       {/* Dashboard Sidebar */}
-      <div className="md:w-64 w-20 bg-gradient-to-b from-purple-900 to-blue-900 pt-6 shadow-2xl relative">
+      <div className="md:w-64 w-20 bg-gradient-to-b from-purple-900 to-blue-500 pt-6 shadow-2xl relative">
         <ul className="menu flex flex-col items-center md:items-start p-4">
           {/* Logo */}
           <Link href="/dashboard?key=dashboard">
             <div className="flex justify-center mb-8 hover:scale-105 transition-all duration-300">
               <img
-                className="md:w-2/6 w-12 rounded-full border border-purple-500 shadow-lg"
-                src="https://i.ibb.co.com/61WySQq/pngwing-com-3.png"
+                className="md:w-2/6 w-12 rounded-full border border-purple-300 shadow-lg"
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/e-commerce-logo%2Conline-store-logo%2Ccart-logo-design-template-9b5e4319f7f69b92d7421a048ce90dcb_screen.jpg?ts=1662916038"
                 alt="Logo"
               />
-            </div>
+            </div> 
           </Link>
 
           <hr className="border-purple-500 w-full mb-4 opacity-40" />
@@ -246,7 +250,7 @@ const Sidebar = () => {
         </ul>
 
         {/* Bottom Glow Effect */}
-        <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-purple-500 to-blue-500 opacity-75 blur-lg"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-purple-300 to-blue-300 opacity-75 blur-lg"></div>
       </div>
     </div>
   );
